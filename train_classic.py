@@ -20,11 +20,15 @@ from sklearn.metrics import PrecisionRecallDisplay
 
 
 def main():
+    
+    data_dir_drink = "/yolo_dataset2/face"
+
     # Set up transformations for training and validation (test) data
     # For training data we will do randomized cropping to get to 224 * 224,
     # randomized horizontal flipping, and normalization.
     # For test set we will do only center cropping to get to 224 * 224,
     # and normalization.
+
     data_transforms = {
       'train': transforms.Compose([
           transforms.Grayscale(num_output_channels=1),
