@@ -21,7 +21,7 @@ from sklearn.metrics import PrecisionRecallDisplay
 
 def main():
     
-    data_dir_drink = "/yolo_dataset2/face"
+    data_dir_drink = "yolo_dataset2/face"
 
     # Set up transformations for training and validation (test) data
     # For training data we will do randomized cropping to get to 224 * 224,
